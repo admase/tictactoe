@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US" class="fullscreen no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Danny A. Mase">
+    <meta name="description" content="A Tic-Tac-Toe Game You Can Play in Your Browser!">
+    <meta name="keywords" content="Tic-Tac-Toe, JavaScript, Factory functions, Module Pattern">
+
+    <title>Tic-Tac-Toe App</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <!--/ Wrapper /-->
+    <div class="wrapper">
+
+        <!--/ Header /-->
+        <div class="header" id="header">
+            <div class="masthead">
+                <h1><strong>Tic-Tac-Toe</strong></h1>
+            </div>
+            <div class="row">
+                <div class="col pull-left">
+                    <h4><strong>Player 1: &QUOT;X&QUOT;</strong></h4>
+                    <div id="player1" class="content" contenteditable="true">Enter Name: </div>
+                    <hr />
+                </div>
+                <div class="col pull-center">
+                    <button type="submit" class="btn btn-sm start-btn" id="startBtn">Start Game</button>
+                </div>
+                <div class="col pull-right">
+                    <h4><strong>Player 2: &QUOT;O&QUOT;</strong></h4>
+                    <div id="player2" class="content" contenteditable="true">Enter Name: </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="gameboard">
+            <div class="board-row">
+                <div class="board-cell first-top-cell"></div>
+                <div class="board-cell second-top-cell"></div>
+                <div class="board-cell last-top-cell"></div>
+            </div>
+
+            <div class="board-row">
+                <div class="board-cell first-mid-cell"></div>
+                <div class="board-cell"></div>
+                <div class="board-cell last-mid-cell"></div>
+            </div>
+
+            <div class="board-row">
+                <div class="board-cell first-bottom-cell"></div>
+                <div class="board-cell second-bottom-cell"></div>
+                <div class="board-cell last-bottom-cell"></div>
+            </div>
+            <div id="result"></div>
+        </div>
+
+        <div class="turn">Your Turn: <span id="turn">Player 1</span></div>
+    </div>
+
+    <script src="./main.js" async defer></script>
+</body>
+
+</html>
